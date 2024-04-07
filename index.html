@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的JavaScript网站</title>
+  </head>
+  <body>
+    <h1 id="welcome-message">欢迎来到我的网站！</h1>
+    <button id="click-me">点击我</button>
+
+    <script>
+      document
+        .getElementById("click-me")
+        .addEventListener("click", function () {
+          document.getElementById("welcome-message").textContent =
+            "您已点击按钮！";
+        });
+    </script>
+  </body>
+</html>
